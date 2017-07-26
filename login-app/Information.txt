@@ -1,0 +1,31 @@
+1=>if application dosent work at 4200 then try this 
+
+LINK: https://stackoverflow.com/questions/40717449/how-to-change-angular-2-port-from-4200-to-any-other 
+
+ANSWER:    You can change you application port by
+
+    ng serve --port:4200
+
+    Or if you want to change default port by change in anglular-cli.json
+
+    "defaults": {
+        "serve": {
+        "port": 8080
+        },
+    }
+
+2=> Template parse errors:
+Can't bind to 'ngModel' since it isn't a known property of 'input'. ("e">Login Application</h1>
+<label for="LoginId">Login Id  :</label>
+<input type="text" id ="LoginId" [ERROR ->][(ngModel)]=str value={{str}}><br>
+<button (click)="onClick()" >Click me</button> 
+
+")
+
+LINK : https://stackoverflow.com/questions/38892771/cant-bind-to-ngmodel-since-it-isnt-a-known-property-of-input
+
+ANSWER :    In order to be able to use two-way data binding for 
+            form inputs you need to import theFormsModule package in 
+            your Angular module. For more info see the Angular 2 
+            official tutorial here and the official documentation for 
+            forms

@@ -1,0 +1,39 @@
+<!-- <a [routerLink]="['/login']"><h3>Login</h3></a>
+<a [routerLink]="['/registration']"><h3>New User?</h3></a> -->
+<!-- &&&&&&&&&&<div class="topnav">
+  <a class={{Login}} (click)="linkClick(0)" [routerLink]="['/login']">Login</a>
+  <a class={{New_User}} (click)="linkClick(1)" [routerLink]="['/registration']">New User?</a> &&&&&-->
+  <!-- <a href="#contact">Contact</a>
+  <a href="#about">About</a> -->
+<!-- &&&&&&&&&&&&&&</div>
+<router-outlet></router-outlet>&&&&&&&& -->
+
+
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    
+    <div class="navbar-header">
+      <a class="navbar-brand" [routerLink]="['/first']">Product Management</a>
+    </div>
+
+    <ul class="nav navbar-nav">
+      <li><a [routerLink]="['/login']">Login</a></li>
+      <li><a [routerLink]="['/registration']">SignUp</a></li>
+      
+      <li class="dropdown"><a class="dropdown-toggel" data-toggle="dropdown" href=#>
+        More...<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href=#>Contact Us</a></li>
+          <li><a [routerLink]="['/aboutUs']">About Us</a></li>
+        </ul>
+      </li>
+
+    </ul>
+
+  </div>
+  
+</nav>
+
+<router-outlet></router-outlet>
+

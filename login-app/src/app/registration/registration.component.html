@@ -1,0 +1,74 @@
+<p>
+  registration works!
+</p>
+<div class="container signInDiv">
+ 
+
+  <div class="input-group col-sm-offset-5" >
+      <h4>Registration Form</h4>
+  </div>
+  
+  <div class="input-group">
+      <label class="control-label col-sm-2" for="loginId">Username:</label>
+  </div>
+  <div class="input-group">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+      <input type="text" class="form-control" id="loginId" name="loginId"
+      [(ngModel)]=login value={{login}} placeholder="Name">
+  </div>
+
+  <div class="form-group">
+  </div>
+
+  <div class="input-group">
+      <label class="control-label col-sm-2" for="email">Email:</label>
+  </div>
+  <div class="input-group">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+      <input type="email" class="form-control" id="email" name="email" 
+       [(ngModel)]=email value={{email}} placeholder="Email Id">
+  </div>
+
+  <div class="form-group">
+  </div>
+
+  <div class="input-group">
+      <label class="control-label col-sm-2" for="phnNumber">Number:</label>
+  </div>
+  <div class="input-group">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+      <input type="number" class="form-control" id="phnNumber" name="phnNumber" 
+       [(ngModel)]=phnNumber value={{phnNumber}} placeholder="Phone Number">
+  </div>
+
+  <div class="form-group">
+  </div>
+
+  <div class="input-group">
+      <label class="control-label col-sm-2" for="pass1">Password:</label>
+  </div>
+  <div class="input-group">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+      <input type="password" class="form-control" id="pass1" name="pass1" 
+       [(ngModel)]=pass1 value={{pass1}} placeholder="Password">
+  </div>
+
+  <div class="input-group">
+      <label class="control-label col-sm-2" for="pass2">Re Password:</label>
+  </div>
+  <div class="input-group">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+      <input type="password" class="form-control" id="pass2" name="pass2" 
+       [(ngModel)]=pass2 value={{pass2}} placeholder="Confirm Password">
+  </div>
+
+  <div class="form-group">
+  </div>
+
+  
+  <div class="input-group col-sm-offset-6">
+      <button class="form-control btn btn-primary" (click)="registerClicked(login,pass)">Register</button>
+  </div>
+    
+</div>
+

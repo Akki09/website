@@ -1,0 +1,11 @@
+.signInDiv {
+    padding-top: 10%;
+    padding-bottom: 15%;
+    width: 60%;
+    height: 50%;
+    border: 1px solid red;
+    border-collapse: collapse;
+    margin: auto;
+
+   
+}
