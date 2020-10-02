@@ -1,6 +1,6 @@
 Please read if you have any issue while running this login application
 
-1=>if application dosent work at 4200 then try this 
+1=>if application dosen't work at 4200 port number then try this
 
 LINK: https://stackoverflow.com/questions/40717449/how-to-change-angular-2-port-from-4200-to-any-other 
 
